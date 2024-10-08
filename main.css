@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif !important;
+  background-color: #3a4663;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body header {
+  padding-left: 31px;
+  padding-right: 24px;
+  max-width: 580px;
+}
+
+#two,
+#three {
+  margin-left: 11px;
+}
+
+.header-titles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#theme {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 71px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  background-color: #242d44;
+  border-radius: 13px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#theme::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: #d03f2f;
+  overflow: visible;
+  cursor: pointer;
+}
+
+#theme::-webkit-slider-thumb:hover {
+  background-color: #f96b5b;
+}
+
+.theme-control {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-top: 30px;
+}
+
+/* .numbers {
+  margin-top: 30px;
+} */
+
+.change-theme {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+
+.header-titles h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  line-height: normal;
+  letter-spacing: -0.53px;
+  padding-top: 40px;
+}
+
+.header-titles h5 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  line-height: normal;
+  letter-spacing: 1px;
+  padding-top: 56px;
+}
+
+.numbers small {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  line-height: normal;
+}
+
+#theme {
+  width: 71px;
+}
+
+body main {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#result-container {
+  width: 327px;
+  height: 88px;
+  background-color: #181f33;
+  border-radius: 10px;
+  border: none;
+  margin-top: 32px;
+}
+
+#result-container p {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: normal;
+  letter-spacing: -0.67px;
+  text-align: right;
+  margin-right: 24px;
+  margin-top: 29px;
+}
+
+/* #result-container::placeholder {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: normal;
+  letter-spacing: -0.67px;
+  text-align: right;
+  margin-right: 24px;
+  vertical-align: middle;
+} */
+
+.calculator {
+  margin-top: 24px;
+  padding: 24px 24px 24px 24px;
+  background-color: #242d44;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  max-width: 327px;
+}
+
+.calculator button {
+  width: 60px;
+  height: 64px;
+  background-color: #eae3dc;
+  border-radius: 5px;
+  box-shadow: inset 0 -4px 0 0 #b3a497;
+  border: none;
+  max-width: 279px;
+}
+
+.calculator button:hover {
+  cursor: pointer;
+}
+
+button p {
+  font-family: "League Spartan", sans-serif !important;
+  font-size: 21px;
+  font-weight: bold;
+  color: #434a59;
+}
+
+#reset,
+#equal {
+  width: 133px;
+}
+
+#reset,
+#delete {
+  background-color: #647198;
+  box-shadow: inset 0 -4px 0 0 #414e73;
+}
+
+#equal {
+  background-color: #d03f2f;
+  box-shadow: inset 0 -4px 0 0 #93261a;
+}
+
+#reset:hover,
+#delete:hover {
+  background-color: #a2b2e1;
+  box-shadow: inset 0 -4px 0 0 #414e73;
+}
+
+#equal:hover {
+  background-color: #f96b5b;
+  box-shadow: inset 0 -4px 0 0 #93261a;
+}
+
+.active h1 {
+  color: #36362c;
+}
+
+@media (min-width: 1440px) {
+  .header-titles h1 {
+    padding-top: 112px;
+  }
+
+  .header-titles h5 {
+    padding-top: 122px;
+  }
+
+  .theme-control {
+    padding-top: 98px;
+  }
+
+  #result-container {
+    width: 540px;
+    height: 128px;
+  }
+
+  #result-container p {
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: -0.93px;
+    text-align: right;
+    margin-right: 32px;
+    margin-top: 40px;
+  }
+
+  .calculator {
+    max-width: 540px;
+    padding: 32px 32px 32px 32px;
+    gap: 24px;
+  }
+
+  .calculator button {
+    width: 101px;
+  }
+
+  #reset,
+  #equal {
+    width: 226px;
+  }
+
+  button p {
+    font-size: 40px;
+    letter-spacing: -0.67px;
+  }
+}
