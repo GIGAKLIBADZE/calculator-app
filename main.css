@@ -95,6 +95,7 @@ body header {
   line-height: normal;
   letter-spacing: 1px;
   padding-top: 56px;
+  margin-top: 5px;
 }
 
 .numbers small {

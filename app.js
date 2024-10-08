@@ -6,23 +6,32 @@ const reset = document.getElementById("reset");
 const equal = document.getElementById("equal");
 
 let converted = 0;
+let buttonValue = "";
+let checker = false;
 
-theme.addEventListener("click", (event) => {
-  let themeValue = event.target.value;
-
-  if (themeValue === 1) {
-    console.log(123);
-  }
-});
 
 buttons.forEach((button) => {
   button.addEventListener("click", (event) => {
-    if (result.innerHTML === "0") {
+    buttonValue = button.textContent;
+
+    if (checker === true) {
+      result.innerHTML = "0";
+    }
+
+    checker = false
+    
+    if (result.innerHTML.length > 10) {
+      return;
+    }
+
+
+    if (result.innerHTML === "0" && (buttonValue !== "/" && buttonValue !== "+" && buttonValue !== "-"  && buttonValue !== "x" && buttonValue !== ".")) {
       result.innerHTML = "";
     }
 
     let clicked = event.target.textContent;
     result.innerHTML += clicked;
+    buttonValue = "";
   });
 });
 
@@ -33,10 +42,18 @@ clear.addEventListener("click", (event) => {
 });
 
 reset.addEventListener("click", (event) => {
-  result.innerHTML = "";
+  result.innerHTML = "0";
 });
 
 equal.addEventListener("click", (event) => {
-  converted = eval(result.innerHTML);
-  result.innerHTML = converted;
+  let expression = result.innerHTML.replaceAll("x", "*");
+  converted = eval(expression);
+
+  if (result.innerHTML % 1 !==0 ) {
+    result.innerHTML = converted.toFixed(2);
+  } else {
+    result.innerHTML = converted;
+  }
+
+  checker = true;
 });
