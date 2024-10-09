@@ -1,3 +1,4 @@
+const body = document.body;
 const theme = document.getElementById("theme");
 const result = document.getElementById("result");
 const buttons = [...document.getElementsByClassName("press")];
@@ -5,10 +6,29 @@ const clear = document.getElementById("delete");
 const reset = document.getElementById("reset");
 const equal = document.getElementById("equal");
 
+
 let converted = 0;
 let buttonValue = "";
 let checker = false;
 
+
+theme.addEventListener("change", (event) => {
+  let switchNumber = parseInt(event.target.value);
+  
+  if (switchNumber === 2) {
+    body.classList.remove("first-theme");
+    body.classList.remove("third-theme");
+    body.classList.add("second-theme");
+  } else if (switchNumber === 3) {
+    body.classList.remove("first-theme");
+    body.classList.remove("second-theme");
+    body.classList.add("third-theme");
+  } else if (switchNumber === 1) {
+    body.classList.remove("second-theme");
+    body.classList.remove("third-theme");
+    body.classList.add("first-theme");
+  }
+});
 
 buttons.forEach((button) => {
   button.addEventListener("click", (event) => {
