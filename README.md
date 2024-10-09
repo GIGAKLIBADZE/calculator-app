@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-# calculator-app
-=======
-# Frontend Mentor - Interactive Card Details Website
+# Frontend Mentor - Calculator App
 
 ## Overview
 
-This is a solution to the Interactive card details website challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the Calculator App website challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
@@ -13,14 +10,12 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
-- Receive an error message when the form is submitted if:
-  - The input fields are empty.
-  - input fields are not correctly filled in.
+- See the different themes when it will be changed by the HTML input range tag
 
 ### Links
 
-Solution URL: [https://github.com/GIGAKLIBADZE/interactive-card-details-website]
-Live Site URL: [https://gigaklibadze.github.io/interactive-card-details-website/]
+Solution URL: [https://github.com/GIGAKLIBADZE/calculator-app]
+Live Site URL: [https://gigaklibadze.github.io/calculator-app/]
 
 ## My process
 
@@ -37,7 +32,9 @@ DOM
 
 ### What I learned
 
-After creating many HTML/CSS projects, this is my third project built with the DOM. Therefore, I can confidently say that I am now completely familiar with the DOM structure and its basics. I plan to continue working on projects involving the DOM to deepen my understanding.
+After creating many HTML/CSS projects, this is my fourth project built with the DOM. Therefore, I can confidently say that I am now completely familiar with the DOM structure and its basics. I plan to continue working on projects involving the DOM to deepen my understanding.
+
+Additionaly, I never used HTML input tag with porperty of range. Now, I am familliar with this. I used some manipulations on this from DOM also.
 
 ### Continued development
 
@@ -51,4 +48,3 @@ Now, after building some markup projects, I am going to continue learn how to us
 
 Author
 Website - [https://github.com/GIGAKLIBADZE]
->>>>>>> 3e2366f (upload readme file)
