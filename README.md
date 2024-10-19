@@ -32,7 +32,7 @@ DOM
 
 ### What I learned
 
-After creating many HTML/CSS projects, this is my fourth project built with the DOM. Therefore, I can confidently say that I am now completely familiar with the DOM structure and its basics. I plan to continue working on projects involving the DOM to deepen my understanding.
+After creating many HTML/CSS projects, this is my fifth project built with the DOM. Therefore, I can confidently say that I am now completely familiar with the DOM structure and its basics. I plan to continue working on projects involving the DOM to deepen my understanding.
 
 Additionaly, I never used HTML input tag with porperty of range. Now, I am familliar with this. I used some manipulations on this from DOM also.
 
